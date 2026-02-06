@@ -1,0 +1,24 @@
+{
+  "name": "blog-api",
+  "version": "1.0.0",
+  "description": "Blog REST API that demonstrates backend skills: authentication, relationships, and clean API design.",
+  "license": "ISC",
+  "author": "Mustapha Ridwan",
+  "type": "module",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --exec npx ts-node index.ts",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.4",
+    "express": "^5.2.1",
+    "nodemon": "^3.1.11",
+    "pino": "^10.3.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/logger": "^0.0.5"
+  }
+}
