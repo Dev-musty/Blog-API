@@ -1,7 +1,6 @@
 import { Schema, model, Types } from "mongoose";
 
 const postSchema = new Schema({
-  _id: Schema.Types.UUID,
   title: {
     type: String,
     required: true,

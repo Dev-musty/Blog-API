@@ -26,7 +26,7 @@ class ProtectRoute {
     }
 
     try {
-      const user = await User.findById((decoded as any).select("-password"));
+      const user = await User.findById((decoded as any).data).select("-password");
       if (!user) {
         return res.status(401).json({ message: "User not found" });
       }
